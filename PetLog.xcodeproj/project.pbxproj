@@ -15,6 +15,8 @@
 		006BDECC25DC2BCB007DA3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006BDECA25DC2BCB007DA3DB /* LaunchScreen.storyboard */; };
 		006BDED725DC2BCB007DA3DB /* PetLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDED625DC2BCB007DA3DB /* PetLogTests.swift */; };
 		006BDEE225DC2BCB007DA3DB /* PetLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEE125DC2BCB007DA3DB /* PetLogUITests.swift */; };
+		006BDEF325DC2C83007DA3DB /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEF225DC2C83007DA3DB /* PetModel.swift */; };
+		006BDEF825DC2D89007DA3DB /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEF725DC2D89007DA3DB /* Pets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		006BDEDD25DC2BCB007DA3DB /* PetLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006BDEE125DC2BCB007DA3DB /* PetLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetLogUITests.swift; sourceTree = "<group>"; };
 		006BDEE325DC2BCB007DA3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006BDEF225DC2C83007DA3DB /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
+		006BDEF725DC2D89007DA3DB /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				006BDECA25DC2BCB007DA3DB /* LaunchScreen.storyboard */,
 				006BDECD25DC2BCB007DA3DB /* Info.plist */,
 				006BDEC725DC2BCB007DA3DB /* Preview Content */,
+				006BDEF225DC2C83007DA3DB /* PetModel.swift */,
+				006BDEF725DC2D89007DA3DB /* Pets.swift */,
 			);
 			path = PetLog;
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 				006BDEC025DC2BC8007DA3DB /* AppDelegate.swift in Sources */,
 				006BDEC225DC2BC8007DA3DB /* SceneDelegate.swift in Sources */,
 				006BDEC425DC2BC8007DA3DB /* ContentView.swift in Sources */,
+				006BDEF825DC2D89007DA3DB /* Pets.swift in Sources */,
+				006BDEF325DC2C83007DA3DB /* PetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
