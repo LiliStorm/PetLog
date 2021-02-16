@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006BDEC025DC2BC8007DA3DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEBF25DC2BC8007DA3DB /* AppDelegate.swift */; };
+		006BDEC225DC2BC8007DA3DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEC125DC2BC8007DA3DB /* SceneDelegate.swift */; };
+		006BDEC425DC2BC8007DA3DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEC325DC2BC8007DA3DB /* ContentView.swift */; };
+		006BDEC625DC2BCB007DA3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006BDEC525DC2BCB007DA3DB /* Assets.xcassets */; };
+		006BDEC925DC2BCB007DA3DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006BDEC825DC2BCB007DA3DB /* Preview Assets.xcassets */; };
+		006BDECC25DC2BCB007DA3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006BDECA25DC2BCB007DA3DB /* LaunchScreen.storyboard */; };
+		006BDED725DC2BCB007DA3DB /* PetLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDED625DC2BCB007DA3DB /* PetLogTests.swift */; };
+		006BDEE225DC2BCB007DA3DB /* PetLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEE125DC2BCB007DA3DB /* PetLogUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		006BDED325DC2BCB007DA3DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 006BDEB425DC2BC7007DA3DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 006BDEBB25DC2BC7007DA3DB;
+			remoteInfo = PetLog;
+		};
+		006BDEDE25DC2BCB007DA3DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 006BDEB425DC2BC7007DA3DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 006BDEBB25DC2BC7007DA3DB;
+			remoteInfo = PetLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006BDEBC25DC2BC8007DA3DB /* PetLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		006BDEBF25DC2BC8007DA3DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		006BDEC125DC2BC8007DA3DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		006BDEC325DC2BC8007DA3DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		006BDEC525DC2BCB007DA3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		006BDEC825DC2BCB007DA3DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		006BDECB25DC2BCB007DA3DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		006BDECD25DC2BCB007DA3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006BDED225DC2BCB007DA3DB /* PetLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		006BDED625DC2BCB007DA3DB /* PetLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetLogTests.swift; sourceTree = "<group>"; };
+		006BDED825DC2BCB007DA3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006BDEDD25DC2BCB007DA3DB /* PetLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		006BDEE125DC2BCB007DA3DB /* PetLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetLogUITests.swift; sourceTree = "<group>"; };
+		006BDEE325DC2BCB007DA3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		006BDEB925DC2BC7007DA3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006BDECF25DC2BCB007DA3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006BDEDA25DC2BCB007DA3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006BDEB325DC2BC7007DA3DB = {
+			isa = PBXGroup;
+			children = (
+				006BDEBE25DC2BC8007DA3DB /* PetLog */,
+				006BDED525DC2BCB007DA3DB /* PetLogTests */,
+				006BDEE025DC2BCB007DA3DB /* PetLogUITests */,
+				006BDEBD25DC2BC8007DA3DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		006BDEBD25DC2BC8007DA3DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				006BDEBC25DC2BC8007DA3DB /* PetLog.app */,
+				006BDED225DC2BCB007DA3DB /* PetLogTests.xctest */,
+				006BDEDD25DC2BCB007DA3DB /* PetLogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		006BDEBE25DC2BC8007DA3DB /* PetLog */ = {
+			isa = PBXGroup;
+			children = (
+				006BDEBF25DC2BC8007DA3DB /* AppDelegate.swift */,
+				006BDEC125DC2BC8007DA3DB /* SceneDelegate.swift */,
+				006BDEC325DC2BC8007DA3DB /* ContentView.swift */,
+				006BDEC525DC2BCB007DA3DB /* Assets.xcassets */,
+				006BDECA25DC2BCB007DA3DB /* LaunchScreen.storyboard */,
+				006BDECD25DC2BCB007DA3DB /* Info.plist */,
+				006BDEC725DC2BCB007DA3DB /* Preview Content */,
+			);
+			path = PetLog;
+			sourceTree = "<group>";
+		};
+		006BDEC725DC2BCB007DA3DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				006BDEC825DC2BCB007DA3DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		006BDED525DC2BCB007DA3DB /* PetLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				006BDED625DC2BCB007DA3DB /* PetLogTests.swift */,
+				006BDED825DC2BCB007DA3DB /* Info.plist */,
+			);
+			path = PetLogTests;
+			sourceTree = "<group>";
+		};
+		006BDEE025DC2BCB007DA3DB /* PetLogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				006BDEE125DC2BCB007DA3DB /* PetLogUITests.swift */,
+				006BDEE325DC2BCB007DA3DB /* Info.plist */,
+			);
+			path = PetLogUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		006BDEBB25DC2BC7007DA3DB /* PetLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006BDEE625DC2BCB007DA3DB /* Build configuration list for PBXNativeTarget "PetLog" */;
+			buildPhases = (
+				006BDEB825DC2BC7007DA3DB /* Sources */,
+				006BDEB925DC2BC7007DA3DB /* Frameworks */,
+				006BDEBA25DC2BC7007DA3DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetLog;
+			productName = PetLog;
+			productReference = 006BDEBC25DC2BC8007DA3DB /* PetLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		006BDED125DC2BCB007DA3DB /* PetLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006BDEE925DC2BCB007DA3DB /* Build configuration list for PBXNativeTarget "PetLogTests" */;
+			buildPhases = (
+				006BDECE25DC2BCB007DA3DB /* Sources */,
+				006BDECF25DC2BCB007DA3DB /* Frameworks */,
+				006BDED025DC2BCB007DA3DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				006BDED425DC2BCB007DA3DB /* PBXTargetDependency */,
+			);
+			name = PetLogTests;
+			productName = PetLogTests;
+			productReference = 006BDED225DC2BCB007DA3DB /* PetLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		006BDEDC25DC2BCB007DA3DB /* PetLogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006BDEEC25DC2BCB007DA3DB /* Build configuration list for PBXNativeTarget "PetLogUITests" */;
+			buildPhases = (
+				006BDED925DC2BCB007DA3DB /* Sources */,
+				006BDEDA25DC2BCB007DA3DB /* Frameworks */,
+				006BDEDB25DC2BCB007DA3DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				006BDEDF25DC2BCB007DA3DB /* PBXTargetDependency */,
+			);
+			name = PetLogUITests;
+			productName = PetLogUITests;
+			productReference = 006BDEDD25DC2BCB007DA3DB /* PetLogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		006BDEB425DC2BC7007DA3DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					006BDEBB25DC2BC7007DA3DB = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					006BDED125DC2BCB007DA3DB = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 006BDEBB25DC2BC7007DA3DB;
+					};
+					006BDEDC25DC2BCB007DA3DB = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 006BDEBB25DC2BC7007DA3DB;
+					};
+				};
+			};
+			buildConfigurationList = 006BDEB725DC2BC7007DA3DB /* Build configuration list for PBXProject "PetLog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 006BDEB325DC2BC7007DA3DB;
+			productRefGroup = 006BDEBD25DC2BC8007DA3DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				006BDEBB25DC2BC7007DA3DB /* PetLog */,
+				006BDED125DC2BCB007DA3DB /* PetLogTests */,
+				006BDEDC25DC2BCB007DA3DB /* PetLogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		006BDEBA25DC2BC7007DA3DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006BDECC25DC2BCB007DA3DB /* LaunchScreen.storyboard in Resources */,
+				006BDEC925DC2BCB007DA3DB /* Preview Assets.xcassets in Resources */,
+				006BDEC625DC2BCB007DA3DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006BDED025DC2BCB007DA3DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006BDEDB25DC2BCB007DA3DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		006BDEB825DC2BC7007DA3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006BDEC025DC2BC8007DA3DB /* AppDelegate.swift in Sources */,
+				006BDEC225DC2BC8007DA3DB /* SceneDelegate.swift in Sources */,
+				006BDEC425DC2BC8007DA3DB /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006BDECE25DC2BCB007DA3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006BDED725DC2BCB007DA3DB /* PetLogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006BDED925DC2BCB007DA3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006BDEE225DC2BCB007DA3DB /* PetLogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		006BDED425DC2BCB007DA3DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 006BDEBB25DC2BC7007DA3DB /* PetLog */;
+			targetProxy = 006BDED325DC2BCB007DA3DB /* PBXContainerItemProxy */;
+		};
+		006BDEDF25DC2BCB007DA3DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 006BDEBB25DC2BC7007DA3DB /* PetLog */;
+			targetProxy = 006BDEDE25DC2BCB007DA3DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		006BDECA25DC2BCB007DA3DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				006BDECB25DC2BCB007DA3DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		006BDEE425DC2BCB007DA3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		006BDEE525DC2BCB007DA3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		006BDEE725DC2BCB007DA3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PetLog/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PetLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PetLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		006BDEE825DC2BCB007DA3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PetLog/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PetLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PetLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		006BDEEA25DC2BCB007DA3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetLogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PetLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetLog.app/PetLog";
+			};
+			name = Debug;
+		};
+		006BDEEB25DC2BCB007DA3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetLogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PetLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetLog.app/PetLog";
+			};
+			name = Release;
+		};
+		006BDEED25DC2BCB007DA3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PetLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PetLog;
+			};
+			name = Debug;
+		};
+		006BDEEE25DC2BCB007DA3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PetLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PetLog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		006BDEB725DC2BC7007DA3DB /* Build configuration list for PBXProject "PetLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006BDEE425DC2BCB007DA3DB /* Debug */,
+				006BDEE525DC2BCB007DA3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		006BDEE625DC2BCB007DA3DB /* Build configuration list for PBXNativeTarget "PetLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006BDEE725DC2BCB007DA3DB /* Debug */,
+				006BDEE825DC2BCB007DA3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		006BDEE925DC2BCB007DA3DB /* Build configuration list for PBXNativeTarget "PetLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006BDEEA25DC2BCB007DA3DB /* Debug */,
+				006BDEEB25DC2BCB007DA3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		006BDEEC25DC2BCB007DA3DB /* Build configuration list for PBXNativeTarget "PetLogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006BDEED25DC2BCB007DA3DB /* Debug */,
+				006BDEEE25DC2BCB007DA3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 006BDEB425DC2BC7007DA3DB /* Project object */;
+}
