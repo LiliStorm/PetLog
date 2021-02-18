@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct PetModel {
+struct PetModel: Identifiable {
+    var id = UUID()
     var petName: String
     var petSpecies: String
     var petBreed: String

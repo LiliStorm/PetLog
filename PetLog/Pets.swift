@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Pets {
-    var pets = [PetModel]()
+class Pets: ObservableObject {
+    @Published var pets = [PetModel]()
     
     init() {
         addMockData()
@@ -18,6 +18,6 @@ class Pets {
         pets.append(PetModel(petName: "Doggo", petSpecies: "Dog", petBreed: "Pointer"))
         pets.append(PetModel(petName: "Kitty", petSpecies: "Cat", petBreed: "Persian"))
         pets.append(PetModel(petName: "Ratty", petSpecies: "Rat", petBreed: "Domesticated rat"))
-        pets.append(PetModel(petName: "Hammy", petSpecies: "Hamster", petBreed: "Pointer"))
+        pets.append(PetModel(petName: "Hammy", petSpecies: "Hamster", petBreed: "Gold hamster"))
     }
 }
