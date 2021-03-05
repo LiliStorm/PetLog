@@ -10,6 +10,14 @@
 		000482AC25EBDC6B00D7A870 /* PetEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000482AA25EBDC6B00D7A870 /* PetEntity+CoreDataClass.swift */; };
 		000482AD25EBDC6B00D7A870 /* PetEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000482AB25EBDC6B00D7A870 /* PetEntity+CoreDataProperties.swift */; };
 		000482FE25EBEFFD00D7A870 /* NewPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000482FD25EBEFFD00D7A870 /* NewPetView.swift */; };
+		0004830425ED74F900D7A870 /* PetJournal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0004830225ED74F900D7A870 /* PetJournal+CoreDataClass.swift */; };
+		0004830D25ED776F00D7A870 /* PetJournal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0004830C25ED776F00D7A870 /* PetJournal+CoreDataProperties.swift */; };
+		0004831225ED8E7400D7A870 /* NewEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0004831125ED8E7400D7A870 /* NewEntryView.swift */; };
+		0004831D25F0170F00D7A870 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0004831C25F0170F00D7A870 /* JournalEntryView.swift */; };
+		000B13CA25F2106100E14E3A /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B13C925F2106100E14E3A /* Pets.swift */; };
+		000B13D225F2108000E14E3A /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B13D125F2108000E14E3A /* Journal.swift */; };
+		000B13DA25F210A400E14E3A /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B13D925F210A400E14E3A /* JournalEntry.swift */; };
+		000B13E225F210CF00E14E3A /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B13E125F210CF00E14E3A /* PetModel.swift */; };
 		006BDEC025DC2BC8007DA3DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEBF25DC2BC8007DA3DB /* AppDelegate.swift */; };
 		006BDEC225DC2BC8007DA3DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEC125DC2BC8007DA3DB /* SceneDelegate.swift */; };
 		006BDEC425DC2BC8007DA3DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEC325DC2BC8007DA3DB /* ContentView.swift */; };
@@ -18,10 +26,6 @@
 		006BDECC25DC2BCB007DA3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006BDECA25DC2BCB007DA3DB /* LaunchScreen.storyboard */; };
 		006BDED725DC2BCB007DA3DB /* PetLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDED625DC2BCB007DA3DB /* PetLogTests.swift */; };
 		006BDEE225DC2BCB007DA3DB /* PetLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEE125DC2BCB007DA3DB /* PetLogUITests.swift */; };
-		006BDEF325DC2C83007DA3DB /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEF225DC2C83007DA3DB /* PetModel.swift */; };
-		006BDEF825DC2D89007DA3DB /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEF725DC2D89007DA3DB /* Pets.swift */; };
-		006BDEFD25DFBB8D007DA3DB /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDEFC25DFBB8D007DA3DB /* JournalEntry.swift */; };
-		006BDF0225DFBBE6007DA3DB /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BDF0125DFBBE6007DA3DB /* Journal.swift */; };
 		0093E19E25E2C6DA00C4A9CA /* PetPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093E19D25E2C6DA00C4A9CA /* PetPageView.swift */; };
 		0093E1A325E2CB2300C4A9CA /* SlideOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093E1A225E2CB2300C4A9CA /* SlideOverView.swift */; };
 		0093E1B025EBCD7200C4A9CA /* PetLogModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0093E1AE25EBCD7200C4A9CA /* PetLogModel.xcdatamodeld */; };
@@ -48,6 +52,14 @@
 		000482AA25EBDC6B00D7A870 /* PetEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		000482AB25EBDC6B00D7A870 /* PetEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		000482FD25EBEFFD00D7A870 /* NewPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPetView.swift; sourceTree = "<group>"; };
+		0004830225ED74F900D7A870 /* PetJournal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetJournal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0004830C25ED776F00D7A870 /* PetJournal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetJournal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0004831125ED8E7400D7A870 /* NewEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryView.swift; sourceTree = "<group>"; };
+		0004831C25F0170F00D7A870 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
+		000B13C925F2106100E14E3A /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
+		000B13D125F2108000E14E3A /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		000B13D925F210A400E14E3A /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		000B13E125F210CF00E14E3A /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		006BDEBC25DC2BC8007DA3DB /* PetLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		006BDEBF25DC2BC8007DA3DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		006BDEC125DC2BC8007DA3DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +74,6 @@
 		006BDEDD25DC2BCB007DA3DB /* PetLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006BDEE125DC2BCB007DA3DB /* PetLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetLogUITests.swift; sourceTree = "<group>"; };
 		006BDEE325DC2BCB007DA3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		006BDEF225DC2C83007DA3DB /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
-		006BDEF725DC2D89007DA3DB /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
-		006BDEFC25DFBB8D007DA3DB /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
-		006BDF0125DFBBE6007DA3DB /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		0093E19D25E2C6DA00C4A9CA /* PetPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPageView.swift; sourceTree = "<group>"; };
 		0093E1A225E2CB2300C4A9CA /* SlideOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverView.swift; sourceTree = "<group>"; };
 		0093E1AF25EBCD7200C4A9CA /* PetLogModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetLogModel.xcdatamodel; sourceTree = "<group>"; };
@@ -99,6 +107,8 @@
 		006BDEB325DC2BC7007DA3DB = {
 			isa = PBXGroup;
 			children = (
+				0004830C25ED776F00D7A870 /* PetJournal+CoreDataProperties.swift */,
+				0004830225ED74F900D7A870 /* PetJournal+CoreDataClass.swift */,
 				000482AA25EBDC6B00D7A870 /* PetEntity+CoreDataClass.swift */,
 				000482AB25EBDC6B00D7A870 /* PetEntity+CoreDataProperties.swift */,
 				006BDEBE25DC2BC8007DA3DB /* PetLog */,
@@ -128,11 +138,11 @@
 				006BDECA25DC2BCB007DA3DB /* LaunchScreen.storyboard */,
 				006BDECD25DC2BCB007DA3DB /* Info.plist */,
 				006BDEC725DC2BCB007DA3DB /* Preview Content */,
-				006BDEF225DC2C83007DA3DB /* PetModel.swift */,
-				006BDEF725DC2D89007DA3DB /* Pets.swift */,
-				006BDEFC25DFBB8D007DA3DB /* JournalEntry.swift */,
-				006BDF0125DFBBE6007DA3DB /* Journal.swift */,
 				0093E1AE25EBCD7200C4A9CA /* PetLogModel.xcdatamodeld */,
+				000B13C925F2106100E14E3A /* Pets.swift */,
+				000B13D125F2108000E14E3A /* Journal.swift */,
+				000B13D925F210A400E14E3A /* JournalEntry.swift */,
+				000B13E125F210CF00E14E3A /* PetModel.swift */,
 			);
 			path = PetLog;
 			sourceTree = "<group>";
@@ -170,6 +180,8 @@
 				0093E19D25E2C6DA00C4A9CA /* PetPageView.swift */,
 				006BDEC325DC2BC8007DA3DB /* ContentView.swift */,
 				000482FD25EBEFFD00D7A870 /* NewPetView.swift */,
+				0004831125ED8E7400D7A870 /* NewEntryView.swift */,
+				0004831C25F0170F00D7A870 /* JournalEntryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,19 +316,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006BDEFD25DFBB8D007DA3DB /* JournalEntry.swift in Sources */,
 				006BDEC025DC2BC8007DA3DB /* AppDelegate.swift in Sources */,
+				000B13E225F210CF00E14E3A /* PetModel.swift in Sources */,
 				006BDEC225DC2BC8007DA3DB /* SceneDelegate.swift in Sources */,
 				006BDEC425DC2BC8007DA3DB /* ContentView.swift in Sources */,
 				000482AC25EBDC6B00D7A870 /* PetEntity+CoreDataClass.swift in Sources */,
-				006BDEF825DC2D89007DA3DB /* Pets.swift in Sources */,
 				0093E19E25E2C6DA00C4A9CA /* PetPageView.swift in Sources */,
 				0093E1B025EBCD7200C4A9CA /* PetLogModel.xcdatamodeld in Sources */,
-				006BDF0225DFBBE6007DA3DB /* Journal.swift in Sources */,
 				0093E1A325E2CB2300C4A9CA /* SlideOverView.swift in Sources */,
+				000B13DA25F210A400E14E3A /* JournalEntry.swift in Sources */,
 				000482FE25EBEFFD00D7A870 /* NewPetView.swift in Sources */,
+				000B13D225F2108000E14E3A /* Journal.swift in Sources */,
+				000B13CA25F2106100E14E3A /* Pets.swift in Sources */,
 				000482AD25EBDC6B00D7A870 /* PetEntity+CoreDataProperties.swift in Sources */,
-				006BDEF325DC2C83007DA3DB /* PetModel.swift in Sources */,
+				0004831D25F0170F00D7A870 /* JournalEntryView.swift in Sources */,
+				0004830425ED74F900D7A870 /* PetJournal+CoreDataClass.swift in Sources */,
+				0004830D25ED776F00D7A870 /* PetJournal+CoreDataProperties.swift in Sources */,
+				0004831225ED8E7400D7A870 /* NewEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

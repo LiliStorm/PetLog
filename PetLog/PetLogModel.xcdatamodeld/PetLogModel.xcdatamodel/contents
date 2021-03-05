@@ -8,7 +8,15 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="species" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="PetJournal" representedClassName="PetJournal" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="petID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="PetEntity" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="PetJournal" positionX="-54" positionY="36" width="128" height="118"/>
     </elements>
 </model>

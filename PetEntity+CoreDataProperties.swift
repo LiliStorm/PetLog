@@ -21,7 +21,7 @@ extension PetEntity {
     @NSManaged public var breed: String?
     @NSManaged public var name: String
     @NSManaged public var species: String?
-    @NSManaged public var id: UUID?
+    @NSManaged public var id: UUID
 
 }
 

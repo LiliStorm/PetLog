@@ -30,19 +30,35 @@ struct NewPetView: View {
                 TextField("Species", text: $newPetSpecies).textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Breed", text: $newPetBreed).textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                Button(action: {
-                    addNewPet()
+                HStack {
+                    Button(action: {
+                        hideView()
+                    }
+                    , label: {
+                        Text("Cancel")
+                            .frame(width: 70, height: 40, alignment: .center)
+                            .background(Color.red)
+                            .foregroundColor(.white)
+                            .clipShape(Capsule())
+                            .cornerRadius(20)
+                            .shadow(color: .gray, radius: 1.0)
+                    })
                     
-                }, label: {
-                    Text("Save")
-                        .frame(width: 60, height: 60, alignment: .center)
-                        .background(isNewPetValid() ? Color.orange : Color.gray)
-                        .foregroundColor(.white)
-                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                        .cornerRadius(40)
-                        .shadow(color: .gray, radius: 1.0)
-                })
-                .disabled(!isNewPetValid())
+                    Button(action: {
+                        addNewPet()
+                        hideView()
+                        
+                    }, label: {
+                        Text("Save")
+                            .frame(width: 70, height: 40, alignment: .center)
+                            .background(isNewPetValid() ? Color.green : Color.gray)
+                            .foregroundColor(.white)
+                            .clipShape(Capsule())
+                            .cornerRadius(20)
+                            .shadow(color: .gray, radius: 1.0)
+                    })
+                    .disabled(!isNewPetValid())
+                }
                 
                 Spacer()
             }
@@ -69,7 +85,9 @@ struct NewPetView: View {
         } catch {
             print(error.localizedDescription)
         }
-        
+    }
+    
+    func hideView() {
         newPetName = ""
         newPetSpecies = ""
         newPetBreed = ""
