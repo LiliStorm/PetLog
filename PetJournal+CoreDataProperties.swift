@@ -18,7 +18,7 @@ extension PetJournal {
 
     @NSManaged public var title: String
     @NSManaged public var content: String?
-    @NSManaged public var date: Date?
+    @NSManaged public var date: Date
     @NSManaged public var id: UUID
     @NSManaged public var petID: UUID
 

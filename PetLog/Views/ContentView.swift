@@ -22,19 +22,45 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                VStack(spacing: 40) {
+                VStack {
                     
                     Text("My pets")
                         .font(.title)
                     
-                    
                     List {
                         ForEach(petEntities) { pet in
                             NavigationLink(destination: PetPageView(currentPet: pet)){
-                                Text(pet.name)
+                                ZStack(alignment: .bottom) {
+                                    Image("cute piggy")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 277)
+                                        //.listRowInsets(.init())
+                                    
+                                    Rectangle()
+                                        .fill(Color.purple)
+                                        .frame(width: UIScreen.main.bounds.width, height: 60)
+                                        .opacity(0.6)
+                                    
+                                    VStack {
+                                        Text(pet.name)
+                                            .font(.title)
+                                            .lineLimit(1)
+                                            .foregroundColor(Color.white)
+                                        
+                                        Text(pet.birthday, style: .date)
+                                            .font(.callout)
+                                            .foregroundColor(Color.white)
+                                    }
+                                    .padding(.bottom, 5)
+                                }
+                                .padding(.leading, -20)
+                                .padding(.top, -5)
+                                .padding(.bottom, -5)
                                 
                             }
-                        }.onDelete { indexSet in
+                        }
+                        .onDelete { indexSet in
                             for index in indexSet {
                                 // TODO: confirmation popup
                                 viewContext.delete(petEntities[index])
@@ -46,6 +72,8 @@ struct ContentView: View {
                             }
                         }
                     }
+                    .listStyle(PlainListStyle())
+                    
                     Button(action: {
                         showSlideOver = true
                         withAnimation(.spring()) {
@@ -62,13 +90,20 @@ struct ContentView: View {
                             .shadow(color: .gray, radius: 1.0)
                         
                     })
+                    
                 }
                 
                 if(showSlideOver) {
+                    Color.black
+                        .ignoresSafeArea()
+                        .opacity(0.5)
+                    
                     NewPetView(showSlideOver: $showSlideOver, slideOverOffset: $newPetSliderOffset)
+                        .cornerRadius(10)
                         .offset(x: 0.0, y: newPetSliderOffset)
                 }
-            }.navigationBarHidden(true)
+            }
+            .navigationBarHidden(true)
             
         }
     }

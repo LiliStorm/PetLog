@@ -13,6 +13,7 @@ struct NewEntryView: View {
     
     @State var newJournalTitle: String = ""
     @State var newJournalContent: String = ""
+    @State var newJournalDate: Date = Date()
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -23,19 +24,26 @@ struct NewEntryView: View {
             Color.white
             
             VStack {
+                
+                DatePicker("Date:", selection: $newJournalDate, in: ...Date())
+                    .padding()
+                
                 TextField("Title", text: $newJournalTitle).textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("Content", text: $newJournalContent).textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                TextEditor(text: $newJournalContent)
+                    .frame(width: UIScreen.main.bounds.width - 30, height: 400)
+                    .border(Color.gray.opacity(0.2))
             
                 Button(action: {
                     saveJournal()
-                    
                 }, label: {
-                    Text("Save")
-                        .frame(width: 70, height: 40, alignment: .center)
+                    Text("Add")
+                        .frame(width: 60, height: 30, alignment: .center)
                         .background(isNewJournalValid() ? Color.green : Color.gray)
                         .foregroundColor(.white)
                         .clipShape(Capsule())
-                        .cornerRadius(20)
+                        .cornerRadius(10)
                         .shadow(color: .gray, radius: 1.0)
                 })
                 .disabled(!isNewJournalValid())
@@ -59,6 +67,7 @@ struct NewEntryView: View {
         newJournal.id = UUID()
         newJournal.title = newJournalTitle
         newJournal.content = newJournalContent
+        newJournal.date = newJournalDate
         
         do {
             try viewContext.save()

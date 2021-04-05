@@ -17,7 +17,7 @@ extension PetEntity {
     }
 
     @NSManaged public var age: Int16
-    @NSManaged public var birthday: Date?
+    @NSManaged public var birthday: Date
     @NSManaged public var breed: String?
     @NSManaged public var name: String
     @NSManaged public var species: String?

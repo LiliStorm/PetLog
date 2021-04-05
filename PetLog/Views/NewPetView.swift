@@ -15,6 +15,7 @@ struct NewPetView: View {
     @State var newPetName: String = ""
     @State var newPetSpecies: String = ""
     @State var newPetBreed: String = ""
+    @State var newPetBirthday = Date()
     
     @Environment(\.managedObjectContext) var viewContext
     @FetchRequest(entity: PetEntity.entity(), sortDescriptors: []) var petEntities: FetchedResults<PetEntity>
@@ -29,18 +30,18 @@ struct NewPetView: View {
                 TextField("Name", text: $newPetName).textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Species", text: $newPetSpecies).textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Breed", text: $newPetBreed).textFieldStyle(RoundedBorderTextFieldStyle())
+                DatePicker("Birthday", selection: $newPetBirthday, in: ...Date(), displayedComponents: .date)
                 
                 HStack {
                     Button(action: {
                         hideView()
-                    }
-                    , label: {
+                    }, label: {
                         Text("Cancel")
-                            .frame(width: 70, height: 40, alignment: .center)
+                            .frame(width: 80, height: 30, alignment: .center)
                             .background(Color.red)
                             .foregroundColor(.white)
                             .clipShape(Capsule())
-                            .cornerRadius(20)
+                            .cornerRadius(10)
                             .shadow(color: .gray, radius: 1.0)
                     })
                     
@@ -49,19 +50,21 @@ struct NewPetView: View {
                         hideView()
                         
                     }, label: {
-                        Text("Save")
-                            .frame(width: 70, height: 40, alignment: .center)
+                        Text("Add")
+                            .frame(width: 60, height: 30, alignment: .center)
                             .background(isNewPetValid() ? Color.green : Color.gray)
                             .foregroundColor(.white)
                             .clipShape(Capsule())
-                            .cornerRadius(20)
+                            .cornerRadius(10)
                             .shadow(color: .gray, radius: 1.0)
                     })
                     .disabled(!isNewPetValid())
                 }
+                .padding()
                 
                 Spacer()
             }
+            .padding()
         }
         
     }
@@ -78,6 +81,7 @@ struct NewPetView: View {
         newPet.name = newPetName
         newPet.species = newPetSpecies
         newPet.breed = newPetBreed
+        newPet.birthday = newPetBirthday
         //newPet.age = 1
         newPet.id = UUID()
         do {
@@ -92,7 +96,6 @@ struct NewPetView: View {
         newPetSpecies = ""
         newPetBreed = ""
         withAnimation(.spring()) {
-            //showSlideOver = false
             slideOverOffset = UIScreen.main.bounds.height
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 showSlideOver = false
